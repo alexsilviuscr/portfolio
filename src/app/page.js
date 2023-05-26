@@ -8,6 +8,7 @@ import Timeline from "@/components/Timeline/Timeline";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Button from "@/components/Button/Button";
 
 export default function Home() {
   return (
@@ -123,15 +124,17 @@ export default function Home() {
                 PS: While I am currently based in Romania, I am more than open to relocating for the perfect opportunity!
               </p>
           </div>
+
+          <Button src="/cv_alexsilviu.pdf" target="blank"> Download my cv</Button>
         </div>
         {/* about visual */}
         <Image
-          src="/hero_image.jpg"
+          src="/Alex.png"
           width={500}
           height={750}
           className="rounded-full"
           placeholder="blur"
-          blurDataURL="/hero_image.jpg"
+          blurDataURL="/Alex.png"
           style={{ objectFit: "contain" }}
           alt="Alex Silviu Designer & Developer Illustration"
           priority={true}

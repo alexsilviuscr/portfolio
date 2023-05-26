@@ -1,9 +1,9 @@
 import styles from './Button.module.scss';
 
-export default function Button({ children }) {
+export default function Button({ children, type = "button"  }) {
     return (
-    <button type="button" className={styles.button}>
-      {children}
-    </button>
+      <button type={type} className={styles.button}>
+        {children}
+      </button>
   );
 }

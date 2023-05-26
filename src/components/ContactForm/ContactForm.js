@@ -6,7 +6,7 @@ import SoMeButton from '../Button/SoMeButton';
 export default function ContactForm() { 
     return (
     <div className={`${styles.contactForm}`}>
-        
+
         <form  name="contact" className={`${styles.form} flex flex-col gap-8`} netlify>
             <div className="flex flex-col gap-4">
                 <label htmlFor="name">Name</label>
@@ -21,7 +21,7 @@ export default function ContactForm() {
                 <textarea name="message" id="message" rows="5" placeholder="Your message..." required ></textarea>
             </div>
             <div className="w-full flex pt-4">
-                <Button type="submit" text="Send" >Send message</Button>
+                <Button type="submit">Send message</Button>
             </div>
         </form>
 
