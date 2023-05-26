@@ -1,0 +1,32 @@
+.timeline {
+    &.experience {
+        &::before {
+            height: 70%;
+        }
+        @media screen and (max-width: 48rem) {
+            &::before {
+                height: 67%;
+            }
+        }
+    }
+    &.education {
+        &::before {
+            height: 75%;
+        }
+        @media screen and (max-width: 48rem) {
+            &::before {
+                height: 72%;
+            }
+        }
+    }
+    &::before {
+        width: 1px;
+        top: auto;
+    }
+    svg {
+        color: var(--accent-color-cer-blue);
+    }
+    .timelineIcon {
+        box-shadow: 0 0 0 2px var(--accent-color-cer-blue), inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05) !important;
+    }
+}

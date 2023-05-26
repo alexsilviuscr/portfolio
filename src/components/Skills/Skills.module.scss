@@ -1,0 +1,22 @@
+.skillCard {
+    @apply flex flex-col items-center gap-4 p-4 justify-center;
+    width: 10rem;
+    height: 10rem;
+    background: var(--secondary-bg-color);
+    border-radius: 0.5rem;
+    border: 0.1rem rgba(42, 160, 203, 0.3) solid;
+    color: var(--body-text-color);
+    text-align: center;
+
+    p {
+        font-size: 1rem;
+    }
+
+    .img {
+        object-fit: contain;
+    }
+
+}
+.skills {
+    @apply flex flex-wrap flex-row gap-4 sm:justify-start justify-center;
+}

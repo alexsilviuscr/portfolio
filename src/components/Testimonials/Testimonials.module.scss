@@ -1,0 +1,29 @@
+.testimonials {
+    // @apply py-16;
+
+    background: var(--secondary-bg-color);
+    letter-spacing: 0.01em;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    border: 0.1rem rgba(42, 160, 203, 0.3) solid;
+    color: var(--body-text-color);
+
+    li {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding: 0.5rem 1rem;
+    }
+
+    @media (min-width: 48rem) {
+        padding: 4rem;
+    }
+    
+}
+.author {
+    p {
+        font-size: 0.9em;
+        color: var(--accent-color-grey);
+        
+    }
+
+}
