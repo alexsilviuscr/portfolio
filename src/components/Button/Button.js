@@ -1,9 +1,17 @@
 import styles from './Button.module.scss';
 
-export default function Button({ children, type = "button"  }) {
+export default function Button({ children, href, type = "button" }) {
+  if (href) {
     return (
-      <button type={type} className={styles.button}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={styles.button}>
         {children}
-      </button>
+      </a>
+    );
+  }
+
+  return (
+    <button type={type} className={styles.button}>
+      {children}
+    </button>
   );
 }

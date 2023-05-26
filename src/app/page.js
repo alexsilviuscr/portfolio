@@ -125,7 +125,7 @@ export default function Home() {
               </p>
           </div>
 
-          <Button src="/cv_alexsilviu.pdf" target="blank"> Download my cv</Button>
+          <Button href="/cv_alexsilviu.pdf" target="blank"> Download my cv</Button>
         </div>
         {/* about visual */}
         <Image
