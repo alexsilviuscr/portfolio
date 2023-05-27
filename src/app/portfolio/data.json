@@ -27,6 +27,18 @@
             "Heroku: Heroku is a cloud platform that allows deploying and hosting the BariCare app.",
             "Tailwind CSS: Tailwind CSS is a utility-first CSS framework used for styling the app, providing a responsive and customizable design.",
             "Framer Motion: Framer Motion is a popular animation library for React, used to add smooth and engaging animations to the app."
+        ],
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
         ]
     },
     {
@@ -54,6 +66,18 @@
             "React: React is a JavaScript library for building user interfaces, and it is the foundation of the frontend of the BariCare app.",
             "Tailwind CSS: Tailwind CSS is a utility-first CSS framework used for styling the app, providing a responsive and customizable design.",
             "Framer Motion: Framer Motion is a popular animation library for React, used to add smooth and engaging animations to the app."
+        ],
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
         ]
     },
     {
@@ -81,6 +105,99 @@
             "HTML: HTML is used for structuring the content and elements of the web application.",
             "CSS: CSS is used for styling the application and creating an appealing visual design.",
             "JavaScript: JavaScript is used to add interactivity and functionality to the application, including form submission, result calculation, and recommendation generation."
+        ],
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Innovisor Website",
+        "slug": "innovisor",
+        "github": "",
+        "demo": "",
+        "image": "/portfolio/innovisor_case.jpg",
+        "info": "UX/UI Design, Adobe XD/Figma, HTML, CSS, JavaScript, Wordpress",
+        "introduction": [
+            "",
+            ""
+        ],
+        "features": "",
+        "technologies": "",
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Rice Mobile Shopping Experience",
+        "slug": "rice-mobile-shopping",
+        "github": "",
+        "demo": "",
+        "image": "/portfolio/rice_case.jpg",
+        "info": "UX/UI Design, User Research, Usability Testing, Mobile Design",
+        "introduction": [
+            "",
+            ""
+        ],
+        "features": "",
+        "technologies": "",
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 6,
+        "title": "The Usability of E-Learning Platforms at SDU",
+        "slug": "sdu-usability-elearning",
+        "github": "",
+        "demo": "",
+        "image": "/portfolio/sdu_case.jpg",
+        "info": "UX Design, User Research, Usability Testing",
+        "introduction": [
+            "",
+            ""
+        ],
+        "features": "",
+        "technologies": "",
+        "problem": [
+            "",
+            ""
+        ],
+        "insights": [
+            "",
+            ""
+        ],
+        "solution": [
+            "",
+            ""
         ]
     }
   ]

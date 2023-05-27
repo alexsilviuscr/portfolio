@@ -27,25 +27,25 @@ const portfolio = [
     slug: "baricare-web"
   },
   {
-    name: "Innovisor",
+    name: "Innovisor Website",
     category: ["all", "frontend", "ux-ui"],
     image: "/portfolio/innovisor_case.jpg",
     info: "HTML, CSS, JavaScript, Wordpress, Adobe XD/Figma",
     slug: "innovisor"
   },
   {
-    name: "Rice",
+    name: "Rice Mobile Shopping Experience",
     category: ["all", "ux-ui"],
     image: "/portfolio/rice_case.jpg",
     info: "UX/UI, Usability Testing, User Research, Adobe XD/Figma, Proto.io",
-    slug: "rice"
+    slug: "rice-mobile-shopping"
   },
   {
-    name: "The Usability of E-Learning Platforms",
+    name: "The Usability of E-Learning Platforms at SDU",
     category: ["all", "ux-ui"],
     image: "/portfolio/sdu_case.jpg",
-    info: "UX/UI, Usability Testing, User Research",
-    slug: "usability-elearning"
+    info: "UX, Usability Testing, User Research",
+    slug: "sdu-usability-elearning"
   }
 ];
 
