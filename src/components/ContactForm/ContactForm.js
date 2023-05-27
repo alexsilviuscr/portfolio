@@ -26,7 +26,7 @@ export default function ContactForm() {
             variants={cardVariants}
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.1 }}
         >
             <div className={`${styles.contactForm}`}>
 
