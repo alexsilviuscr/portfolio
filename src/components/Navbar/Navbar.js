@@ -5,7 +5,6 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
-  const [isSticky, setIsSticky] = useState(false);
 
   const handleSetActive = (to) => {
     setActiveSection(to);
@@ -52,21 +51,8 @@ export default function Navbar() {
     </ul>
   );
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.getElementById('navbar');
-      const { top } = navbar.getBoundingClientRect();
-      setIsSticky(top <= 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <nav id="navbar" className={`${styles.navbar} ${isSticky ? styles.sticky : ''} w-full max-w-6xl z-10 h-max rounded-none py-2 px-4 lg:px-8 lg:py-6`}>
+    <nav className={`${styles.navbar} w-full max-w-6xl sticky top-0 z-10 h-max rounded-none py-2 px-4 lg:px-8 lg:py-6`}>
       <div className="flex items-center justify-end">
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>

@@ -88,7 +88,7 @@ export default function Home() {
           variants={cardVariants}
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <section
             className="w-full flex-col max-w-6xl lg:flex py-32"
