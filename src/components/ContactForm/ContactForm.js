@@ -7,7 +7,7 @@ export default function ContactForm() {
     return (
     <div className={`${styles.contactForm}`}>
 
-        <form  name="Alex Silviu Contact Form" className={`${styles.form} flex flex-col gap-8`} netlify data-netlify="true">
+        <form  name="Alex Silviu Contact Form" className={`${styles.form} flex flex-col gap-8`} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <div className="flex flex-col gap-4">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Your name" required />
