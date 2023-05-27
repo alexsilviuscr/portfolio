@@ -21,7 +21,7 @@ export default function ContactForm() {
                 <textarea name="message" id="message" rows="5" placeholder="Your message..." required ></textarea>
             </div>
             <div className="w-full flex pt-4">
-                <input type="hidden" name="_gotcha" style="display:none !important">
+                <input type="hidden" name="_gotcha" style="display:none !important" />
                 <Button type="submit" id="submit">Send message</Button>
                 <button type="submit" id="submit" className={styles.button}>Send message</button>
             </div>
