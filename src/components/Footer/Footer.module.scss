@@ -1,3 +1,43 @@
+$grey: #999999;
+
 .footer {
-    background: red;
+    background: var(--secondary-bg-color);
+    font: 1rem var(--font-body);
+    color: red;
+}
+.copyright {
+    color: $grey;
+    font: 1rem;
+}
+.nav {
+    color: $grey;
+}
+.border {
+    border-color: $grey;
+    opacity: 0.25;
+}
+.footerLogo {
+    svg {
+        font-size: 3rem;
+        margin-top: -6rem;
+
+        @media (max-width: 33.75rem) {
+            margin: 0 auto;
+            margin-top: -4rem;
+        }
+    }
+}
+.footerLogoWrap {
+    // background: red;
+
+    @media (max-width: 33.75rem) {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
+.textCopy {
+    stroke-width: 0.1rem;
 }

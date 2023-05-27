@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 sm:p-24">
       <Navbar />
-      <section className="w-full flex-col max-w-6xl items-center justify-between lg:flex py-32" id="home">
+      <section className="w-full flex flex-col max-w-6xl items-center justify-between lg:flex py-32 gap-16" id="home">
         
         <div className="w-full flex flex-col items-start">
           {/* name */}
@@ -36,8 +36,8 @@ export default function Home() {
           <span className="developer">&lt;front-end developer&gt;</span>
         </div>
 
-        <div className="flex hero-info flex-col-reverse sm:flex-row">
-          <div className="self-end flex flex-col hero-intro">
+        <div className="flex hero-info flex-col-reverse lg:flex-row gap-16">
+          <div className="self-end flex flex-col hero-intro gap-8">
             <h3>Hi there. I'm Alex Silviu, a UX-driven Front-end Developer.</h3>
             <h4>Passionate about neuroscience and design psychology.</h4>
             <div className="flex flex-row gap-8 url-div">
@@ -60,7 +60,7 @@ export default function Home() {
       {/* about section */}
       <section className="w-full flex-col max-w-6xl lg:flex py-32" id="about">
         {/* about intro */}
-        <div className="flex hero-info flex-col gap-8 sm:flex-row-reverse">
+        <div className="flex hero-info flex-col gap-8 lg:flex-row-reverse">
           <div className="flex flex-col gap-8 items-start">
 
             <h1>
@@ -125,7 +125,7 @@ export default function Home() {
               </p>
           </div>
 
-          <Button href="/cv_alexsilviu.pdf" target="blank"> Download my cv</Button>
+          <Button href="/cv_alexsilviu.pdf" target="blank">Download my resume</Button>
         </div>
         {/* about visual */}
         <Image
@@ -143,7 +143,7 @@ export default function Home() {
         {/* end about intro */}
 
        {/* skills and tools */}
-        <div className="flex flex-col gap-8 pt-32 pr-4 sm:flex-row skillsandtools">
+        <div className="flex flex-col gap-8 pt-32 sm:flex-row skillsandtools">
           {/* skills and tools */}
           {['skills', 'tools'].map((section) => (
             <article className="w-full sm:w-1/2 sm:text-left text-center sm:justify-start justify-center flex flex-col gap-8" key={section}>
@@ -155,17 +155,17 @@ export default function Home() {
         {/* end skills and tools */}
 
         {/* experience and education */}
-        <div className="flex flex-col gap-8 py-32 pr-4 sm:flex-row xp">
+        <div className="flex flex-col gap-8 py-32 md:flex-row xp">
           {['experience', 'education'].map((section) => (
-            <article className="w-full sm:w-1/2 sm:text-left text-center sm:justify-start justify-center flex flex-col gap-8" key={section}>
+            <article className="w-full md:w-1/2 sm:text-left text-center sm:justify-start justify-center flex flex-col gap-8" key={section}>
               <h3>{section}</h3>
               <Timeline showEducation={section === 'education'} />
             </article>
           ))}
         </div>
         {/* testimonials */}
-        <div className="">
-            <article className="w-full sm:text-left text-center sm:justify-start justify-center flex flex-col gap-8 pr-4 xp">
+        <div id="testimonials">
+            <article className="w-full md:text-left text-center sm:justify-start justify-center flex flex-col gap-8 pr-4 xp">
               <h3>testimonials</h3>
               <Testimonials />
             </article>
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* portfolio section */}
-      <section className="w-full flex-col max-w-6xl lg:flex py-32 pr-4 " id="portfolio">
+      <section className="w-full flex-col max-w-6xl lg:flex py-32" id="portfolio">
         <div className="flex flex-col items-start gap-8">
           
           {/* section name */}
@@ -199,7 +199,7 @@ export default function Home() {
       </section>
       
       {/* contact section */}
-      <section className="w-full flex-col max-w-6xl lg:flex py-32 pr-4 " id="contact">
+      <section className="w-full flex-col max-w-6xl lg:flex py-32" id="contact">
         <div className="flex flex-col items-start gap-8">
           
           {/* section name */}
