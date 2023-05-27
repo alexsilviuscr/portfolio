@@ -1,19 +1,17 @@
-$grey: #999999;
-
 .footer {
     background: var(--secondary-bg-color);
     font: 1rem var(--font-body);
     color: red;
 }
 .copyright {
-    color: $grey;
+    color: var(--accent-color-grey);
     font: 1rem;
 }
 .nav {
-    color: $grey;
+    color: var(--accent-color-grey);
 }
 .border {
-    border-color: $grey;
+    border-color: var(--accent-color-purple);
     opacity: 0.25;
 }
 .footerLogo {

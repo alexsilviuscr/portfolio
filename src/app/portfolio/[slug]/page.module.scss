@@ -1,0 +1,45 @@
+.portfolioPage {
+    font: 1rem var(--font-body);
+    p {
+        line-height: 1.5;
+    }
+
+    a {
+        color: var(--accent-color-cer-blue);
+        font-weight: bold;
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        font-size: 1rem;
+        text-transform: capitalize;
+
+        @media (min-width: 48rem) {
+            font-size: 1.1rem;
+          }
+
+        &:hover {
+            filter: drop-shadow(0px 0px 5px var(--accent-color-cer-blue));
+            color: var(--body-text-color);
+          }
+    }
+}
+.link {
+    text-transform: capitalize;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    width: fit-content;
+    border-bottom: 2px solid var(--accent-color-purple);
+    padding-block-end: 1rem;
+    font-weight: bold;
+    
+    &:hover {
+        color: var(--accent-color-cer-blue);
+        border-color: var(--accent-color-cer-blue);
+    }
+}
+.image {
+    border: 1px solid rgba(85, 52, 141, 0.3);
+}
+.subtitle {
+    color: var(--accent-color-grey);
+}
+.portfolioTitle {
+    color: var(--accent-color-cer-blue);
+}
