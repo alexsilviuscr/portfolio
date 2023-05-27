@@ -24,7 +24,7 @@ export default function Testimonials() {
       variants={cardVariants}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0 }}
     >
       <div className="flex flex-col gap-8 lg:flex-row">
         <div
