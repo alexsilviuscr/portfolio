@@ -118,25 +118,3 @@
         }
     }
 }
-
-.button {
-    padding: 1rem 2rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--body-text-color);
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid var(--accent-color-purple); 
-    border-radius: 0.25rem;
-    text-transform: capitalize;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-
-    &:hover {
-        // border-color: var(--accent-color-purple);
-        box-shadow: 0 0 1rem var(--accent-color-purple);
-        background-color: var(--accent-color-purple);
-    }
-    &:active {
-        box-shadow: 0 0 0.5rem var(--accent-color-purple);
-    }
-}

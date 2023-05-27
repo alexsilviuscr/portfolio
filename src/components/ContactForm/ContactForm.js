@@ -23,7 +23,6 @@ export default function ContactForm() {
             <div className="w-full flex pt-4">
                 <input type="hidden" name="_gotcha" style={{ display: "none !important" }} />
                 <Button type="submit" id="submit">Send message</Button>
-                <button type="submit" id="submit" className={styles.button}>Send message</button>
             </div>
         </form>
 
