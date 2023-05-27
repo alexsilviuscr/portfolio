@@ -1,5 +1,6 @@
 import styles from './Tools.module.scss';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const toolsData = [
   {
@@ -34,6 +35,22 @@ const toolsData = [
   },
 ];
 
+const cardVariants = {
+  offscreen: {
+    x: -300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
+
 function ToolCard({ imagePath, altText, toolName }) {
   return (
     <div className={styles.toolCard}>
@@ -54,12 +71,23 @@ export default function Tools() {
   return (
     <div className={styles.tools}>
       {toolsData.map((tool, index) => (
-        <ToolCard
-          key={index}
-          imagePath={tool.imagePath}
-          altText={tool.altText}
-          toolName={tool.toolName}
-        />
+        <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        key={tool.toolName}
+        >
+          <motion.div
+            variants={cardVariants}
+          >
+            <ToolCard
+              key={index}
+              imagePath={tool.imagePath}
+              altText={tool.altText}
+              toolName={tool.toolName}
+            />
+          </motion.div>
+        </motion.div>
       ))}
     </div>
   );

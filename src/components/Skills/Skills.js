@@ -1,5 +1,6 @@
 import styles from './Skills.module.scss';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
 const skillsData = [
   {
@@ -49,6 +50,22 @@ const skillsData = [
   },
 ];
 
+const cardVariants = {
+  offscreen: {
+    x: -300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
+
 function SkillCard({ imagePath, altText, skillName }) {
   return (
     <div className={styles.skillCard}>
@@ -67,15 +84,28 @@ function SkillCard({ imagePath, altText, skillName }) {
 
 export default function Skills() {
   return (
-    <div className={styles.skills}>
-      {skillsData.map((skill, index) => (
-        <SkillCard
-          key={index}
-          imagePath={skill.imagePath}
-          altText={skill.altText}
-          skillName={skill.skillName}
-        />
-      ))}
-    </div>
+    
+      <div className={styles.skills}>
+        {skillsData.map((skill, index) => (
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            key={skill.skillName}
+          >
+            <motion.div
+              variants={cardVariants}
+            >
+              <SkillCard
+                key={index}
+                imagePath={skill.imagePath}
+                altText={skill.altText}
+                skillName={skill.skillName}
+              />
+            </motion.div>
+          </motion.div>
+        ))}
+      </div>
+    
   );
 }

@@ -2,6 +2,7 @@ import styles from "./Portfolio.module.scss";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Button from "../Button/Button";
+import { motion, AnimatePresence } from "framer-motion";
 
 const portfolio = [
   {
@@ -48,6 +49,22 @@ const portfolio = [
   }
 ];
 
+const cardVariants = {
+  offscreen: {
+    x: -300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
+
 export default function Portfolio() {
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
@@ -69,62 +86,73 @@ export default function Portfolio() {
 
   return (
     <div className={styles.portfolio}>
-
-        <div className={styles.portfolioLabels}>
-          <a
-            href="/#"
-            className={filter === "all" ? `${styles.active}` : ""}
-            onClick={(e) => {
-              e.preventDefault();
-              handleFilterClick("all");
-            }}
-          >
-            All
-          </a>
-          <a
-            href="/#"
-            className={filter === "frontend" ? `${styles.active}` : ""}
-            onClick={(e) => {
-              e.preventDefault();
-              handleFilterClick("frontend");
-            }}
-          >
-            Frontend
-          </a>
-          
-          <a
-            href="/#"
-            className={filter === "ux-ui" ? `${styles.active}` : ""}
-            onClick={(e) => {
-              e.preventDefault();
-              handleFilterClick("ux-ui");
-            }}
-          >
-            UX/UI
-          </a>
-        </div>
-
-        <div className={`${styles.portfolioContainer}`}>
+      <div className={styles.portfolioLabels}>
+        <a
+          href="/#"
+          className={filter === "all" ? `${styles.active}` : ""}
+          onClick={(e) => {
+            e.preventDefault();
+            handleFilterClick("all");
+          }}
+        >
+          All
+        </a>
+        <a
+          href="/#"
+          className={filter === "frontend" ? `${styles.active}` : ""}
+          onClick={(e) => {
+            e.preventDefault();
+            handleFilterClick("frontend");
+          }}
+        >
+          Frontend
+        </a>
+        
+        <a
+          href="/#"
+          className={filter === "ux-ui" ? `${styles.active}` : ""}
+          onClick={(e) => {
+            e.preventDefault();
+            handleFilterClick("ux-ui");
+          }}
+        >
+          UX/UI
+        </a>
+      </div>
+      <div className={`${styles.portfolioContainer}`}>
+        <AnimatePresence>
           {projects.map(item => (
-            <div className={`${styles.portfolioItem} flex flex-col gap-8`} key={item.name}>
-              <div className={`${styles.image}`}>
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={600}
-                  height={337}
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className={`${styles.portfolioDetails} flex flex-col justify-center gap-4 p-4`}>
-                <h3>{item.name}</h3>
-                <p>{item.info}</p>
-                <Button href={`/portfolio/${item.slug}`}>Read More</Button>
-              </div>
-            </div>
+            <motion.div
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+              key={item.name}
+            >
+              <motion.div
+                variants={cardVariants}
+                key={item.name}
+              >
+                <div className={`${styles.portfolioItem} flex flex-col gap-8`} key={item.name}>
+                  <div className={`${styles.image}`}>
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={600}
+                      height={337}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className={`${styles.portfolioDetails} flex flex-col justify-center gap-4 p-4`}>
+                    <h3>{item.name}</h3>
+                    <p>{item.info}</p>
+                    <Button href={`/portfolio/${item.slug}`}>Read More</Button>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
           ))}
-        </div>
-      
+        </AnimatePresence>
+      </div>
     </div>
   );
 }
