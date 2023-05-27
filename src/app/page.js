@@ -35,7 +35,7 @@ export default function Home() {
         variants={cardVariants}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0 }}
       >
         <section
           className="w-full flex flex-col max-w-6xl items-center justify-between lg:flex pb-32 pt-16 gap-32"
