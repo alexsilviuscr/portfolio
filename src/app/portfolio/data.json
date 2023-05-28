@@ -38,7 +38,7 @@
         "title": "Portfolio",
         "slug": "portfolio",
         "github": "https://github.com/alexsilviuscr/portfolio",
-        "demo": "https://alexsilviu.netlify.app/",
+        "demo": "https://alexsilviu.vercel.app/",
         "image": "/portfolio/portfolio_case.jpg",
         "info": "HTML, CSS, Tailwind, JavaScript, React, Next.js, Framer Motion",
         "introduction": [
