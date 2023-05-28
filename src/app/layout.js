@@ -1,5 +1,6 @@
 import "./globals.scss";
 import Footer from "@/components/Footer/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: `Alex Silviu's Portfolio`,
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
