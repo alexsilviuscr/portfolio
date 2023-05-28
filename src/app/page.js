@@ -226,7 +226,7 @@ export default function Home() {
             </div>
             {/* testimonials */}
             <div id="testimonials">
-              <article className="w-full md:text-left text-center sm:justify-start justify-center flex flex-col gap-8 pr-4 xp">
+              <article className="w-full md:text-left text-center sm:justify-start justify-center flex flex-col gap-8 xp">
                 <h3>testimonials</h3>
                 <Testimonials />
               </article>
