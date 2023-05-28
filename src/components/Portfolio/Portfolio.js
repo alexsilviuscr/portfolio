@@ -125,7 +125,7 @@ export default function Portfolio() {
             <motion.div
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               key={item.name}
             >
               <motion.div variants={cardVariants} key={item.name}>
