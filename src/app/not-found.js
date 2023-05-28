@@ -10,7 +10,7 @@ export default function NotFound() {
     }, 1000);
 
     if (countdown === 0) {
-      window.location.href = "https://alexsilviu.netlify.app/";
+      window.location.href = "https://alexsilviu.vercel.app/";
     }
 
     return () => clearInterval(timer);

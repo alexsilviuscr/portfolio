@@ -8,7 +8,7 @@ import SoMeButton from "@/components/Button/SoMeButton";
 import { MdOutlinePublic } from "react-icons/md";
 import Head from "next/head";
 import { useEffect } from "react";
-import NotFound from "./not-found";
+import NotFound from "@/app/not-found";
 
 const cardVariants = {
   offscreen: {

@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! This website showcases my work as a UX-driven front-end developer, specializing in delivering inclusive and accessible user experiences.
 
-Published link: https://alexsilviu.netlify.app/
+Published link: https://alexsilviu.vercel.app/
 
 ## About Me
 
