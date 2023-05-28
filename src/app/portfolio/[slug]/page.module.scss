@@ -7,18 +7,18 @@
     a {
         color: var(--accent-color-cer-blue);
         font-weight: bold;
-        transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
         font-size: 1rem;
         text-transform: capitalize;
 
         @media (min-width: 48rem) {
             font-size: 1.1rem;
-          }
+        }
 
         &:hover {
             filter: drop-shadow(0px 0px 5px var(--accent-color-cer-blue));
             color: var(--body-text-color);
-          }
+        }
     }
 }
 .link {
@@ -28,7 +28,7 @@
     border-bottom: 2px solid var(--accent-color-purple);
     padding-block-end: 1rem;
     font-weight: bold;
-    
+
     &:hover {
         color: var(--accent-color-cer-blue);
         border-color: var(--accent-color-cer-blue);

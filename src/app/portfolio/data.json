@@ -28,18 +28,10 @@
             "Tailwind CSS: Tailwind CSS is a utility-first CSS framework used for styling the app, providing a responsive and customizable design.",
             "Framer Motion: Framer Motion is a popular animation library for React, used to add smooth and engaging animations to the app."
         ],
-        "problem": [
-            "",
-            ""
-        ],
-        "insights": [
-            "",
-            ""
-        ],
-        "solution": [
-            "",
-            ""
-        ]
+        "problem": [],
+        "insights": [],
+        "solution": [],
+        "design-process": []
     },
     {
         "id": 2,
@@ -67,18 +59,10 @@
             "Tailwind CSS: Tailwind CSS is a utility-first CSS framework used for styling the app, providing a responsive and customizable design.",
             "Framer Motion: Framer Motion is a popular animation library for React, used to add smooth and engaging animations to the app."
         ],
-        "problem": [
-            "",
-            ""
-        ],
-        "insights": [
-            "",
-            ""
-        ],
-        "solution": [
-            "",
-            ""
-        ]
+        "problem": [],
+        "insights": [],
+        "solution": [],
+        "design-process": []
     },
     {
         "id": 3,
@@ -106,44 +90,46 @@
             "CSS: CSS is used for styling the application and creating an appealing visual design.",
             "JavaScript: JavaScript is used to add interactivity and functionality to the application, including form submission, result calculation, and recommendation generation."
         ],
-        "problem": [
-            "",
-            ""
-        ],
-        "insights": [
-            "",
-            ""
-        ],
-        "solution": [
-            "",
-            ""
-        ]
+        "problem": [],
+        "insights": [],
+        "solution": [],
+        "design-process": []
     },
     {
         "id": 4,
-        "title": "Innovisor Website",
+        "title": "Innovisor Website Redesign",
         "slug": "innovisor",
         "github": "",
         "demo": "",
         "image": "/portfolio/innovisor_case.jpg",
         "info": "UX/UI Design, Adobe XD/Figma, HTML, CSS, JavaScript, Wordpress",
         "introduction": [
-            "",
-            ""
+            "Innovisor is a company that aims to transform organizations into collaborative, agile, and human workplaces by leveraging people data, algorithms, and predictive intelligence.",
+            "Their website required a redesign to align with modern standards and provide a satisfying user experience across desktop and mobile devices."
         ],
         "features": "",
         "technologies": "",
         "problem": [
-            "",
-            ""
+            "The existing Innovisor website had an outdated and non-responsive design, particularly on mobile devices.",
+            "The main pain point identified was the need to update the website to meet modern standards, improve mobile responsiveness, and enhance the usability of case studies."
         ],
         "insights": [
-            "",
-            ""
+            "Through user interviews and heuristic evaluation, three key insights were obtained:",
+            "Poor mobile experience: Users reported that the website did not scale well on mobile devices, resulting in a subpar user experience.",
+            "Issues with modal forms: Modal or pop-up forms for contacting the Innovisor team caused layout problems and hindered user interactions.",
+            "Usability challenges with case studies: Case studies were presented in an inconvenient manner, requiring users to download PDF files and lacking sorting options."
         ],
         "solution": [
-            "",
-            ""
+            "Based on these insights, the website redesign focused on the following solutions:",
+            "Overall design enhancement: The website's design was updated with a focus on improving usability.",
+            "Mobile-first approach: Prioritizing the mobile experience ensured a responsive and user-friendly design across devices.",
+            "Embedded case studies: The case studies were integrated into the website, eliminating the need for PDF downloads, and a sorting feature was implemented."
+        ],
+        "design-process": [
+            "/portfolio/innovisor/01.jpg",
+            "/portfolio/innovisor/02.jpg",
+            "/portfolio/innovisor/03.jpg",
+            "/portfolio/innovisor/04.jpg"
         ]
     },
     {
@@ -155,22 +141,37 @@
         "image": "/portfolio/rice_case.jpg",
         "info": "UX/UI Design, User Research, Usability Testing, Mobile Design",
         "introduction": [
-            "",
-            ""
+            "RICETERIA is part of the Danish homewares and accessories company, RICE, known for colorful melamine, handmade baskets, storage, and hand-glazed tableware.",
+            "Their website required a mobile shopping experience that aligned with their visual brand identity and provided a satisfying user experience on mobile devices."
         ],
         "features": "",
         "technologies": "",
         "problem": [
-            "",
-            ""
+            "RICE's customers often browse products from their mobile phones, and the website wasn't properly optimized for mobile experiences, especially the checkout process.",
+            "The main pain point explored in this solution is the checkout process."
         ],
         "insights": [
-            "",
-            ""
+            "Through user interviews and surveys, the following top 3 conclusions were drawn about RICE's customers and their desires for a satisfying mobile app experience:",
+            "Target audience: RICE serves a wide, general audience, but their main target group is women between the ages of 20 and 26 years old.",
+            "Visual style: Users enjoy the playful, young, and fun visual style of the company and would like to see that reflected in the mobile experience.",
+            "Latest products: Users want to stay informed about the latest products available in the app as RICE constantly releases new collections."
         ],
         "solution": [
-            "",
-            ""
+            "Based on these insights, the mobile app focused on the following solutions:",
+            "isual brand representation: The design aimed to visually represent RICE's brand identity throughout the mobile app.",
+            "Easy product filter: An intuitive and easy-to-use product filter option was implemented.",
+            "Streamlined checkout process: The checkout process was optimized to provide an easy and satisfying experience for users."
+        ],
+        "design-process": [
+            "/portfolio/rice/01.jpg",
+            "/portfolio/rice/02.jpg",
+            "/portfolio/rice/03.jpg",
+            "/portfolio/rice/04.jpg",
+            "/portfolio/rice/05.jpg",
+            "/portfolio/rice/06.jpg",
+            "/portfolio/rice/07.jpg",
+            "/portfolio/rice/08.jpg",
+            "/portfolio/rice/09.jpg"
         ]
     },
     {
@@ -182,23 +183,27 @@
         "image": "/portfolio/sdu_case.jpg",
         "info": "UX Design, User Research, Usability Testing",
         "introduction": [
-            "",
-            ""
-        ],
+            "The University of Southern Denmark had recently switched from the Blackboard e-learning platform to itsLearning and the intention behind this study was to assess the usability of the new platform compared to its predecessor.",
+            "The aim was to investigate if the switch resulted in an improvement in the overall usability and user experience for students."
+          ],
         "features": "",
         "technologies": "",
         "problem": [
-            "",
-            ""
+            "The previous e-learning platform, Blackboard, had a bad user experience and deplorable usability, according to student feedback.",
+            "The main question to answer was whether the new platform, itsLearning, provided a more satisfying usability and overall user experience compared to its predecessor."
         ],
         "insights": [
-            "",
-            ""
+            "To address the problem, two methods were employed to gather insights into the usability experience of students with the previous and current e-learning platforms.",
+            "A questionnaire was used to collect information about the students' experiences, which revealed that Blackboard's usability had an average rating of 1.9 on the Likert scale, indicating poor user satisfaction. However, the switch to itsLearning resulted in a significant improvement, with its usability receiving an average rating of 3 on the Likert scale, showcasing a 57% improvement over Blackboard. These findings highlighted the overall enhancement in usability and user experience with the adoption of itsLearning.",
+            "Usability testing was conducted to evaluate the students' interactions with the newly adopted platform, which included the think-aloud protocol, the time/error log, and interview data. The completion rate of the usability testing was 70% out of 100%. The tested users were also interviewed to rate the overall user experience of itsLearning, which received a 60% approval rate out of 100%. These testing methods provided valuable insights into the students' firsthand experiences and further verified the improvements in usability and user satisfaction with itsLearning."
         ],
         "solution": [
-            "",
-            ""
-        ]
+            "Based on the gathered insights, the following solutions were proposed to enhance the usability and user experience of the e-learning platform at the University of Southern Denmark:",
+            "Simplified interface: The user interface of itsLearning ought to be redesigned to be more intuitive and user-friendly, addressing the usability issues faced with the previous platform. This involves decluttering the interface, improving visual hierarchy, and utilizing consistent design patterns to create a seamless user experience.",
+            "Streamlined navigation: The navigation ought to be restructured to improve the ease of finding and accessing different course materials. For the navigation structure to be optimized, clear pathways need to be provided and reducing the number of clicks required to reach relevant content.",
+            "Clear information presentation: The content layout ought to be optimized to enhance readability and comprehension, reducing cognitive load for students. By employing appropriate typography, clear headings, and visual cues, the presentation of information needs to be made more user-friendly and conducive to effective learning."
+        ],
+        "design-process": []
     }
   ]
   

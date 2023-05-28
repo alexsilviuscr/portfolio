@@ -7,15 +7,12 @@
     border: 0.1rem rgba(42, 160, 203, 0.3) solid;
     color: var(--body-text-color);
     text-align: center;
-
     p {
         font-size: 1rem;
     }
-
     .img {
         object-fit: contain;
     }
-    
 }
 .tools {
     @apply flex flex-wrap flex-row gap-4 sm:justify-start justify-center;

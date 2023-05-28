@@ -1,52 +1,52 @@
-import styles from './Skills.module.scss';
-import Image from 'next/image';
+import styles from "./Skills.module.scss";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const skillsData = [
   {
-    imagePath: '/html.png',
-    altText: 'HTML Icon',
-    skillName: 'HTML',
+    imagePath: "/html.png",
+    altText: "HTML Icon",
+    skillName: "HTML",
   },
   {
-    imagePath: '/css.png',
-    altText: 'CSS Icon',
-    skillName: 'CSS',
+    imagePath: "/css.png",
+    altText: "CSS Icon",
+    skillName: "CSS",
   },
   {
-    imagePath: '/js.png',
-    altText: 'JS Icon',
-    skillName: 'JavaScript',
+    imagePath: "/js.png",
+    altText: "JS Icon",
+    skillName: "JavaScript",
   },
   {
-    imagePath: '/react.png',
-    altText: 'React Icon',
-    skillName: 'React',
+    imagePath: "/react.png",
+    altText: "React Icon",
+    skillName: "React",
   },
   {
-    imagePath: '/ui.png',
-    altText: 'UX/UI Design Icon',
-    skillName: 'UX/UI Design',
+    imagePath: "/ui.png",
+    altText: "UX/UI Design Icon",
+    skillName: "UX/UI Design",
   },
   {
-    imagePath: '/usability.png',
-    altText: 'Usability Testing Icon',
-    skillName: 'Usability Testing',
+    imagePath: "/usability.png",
+    altText: "Usability Testing Icon",
+    skillName: "Usability Testing",
   },
   {
-    imagePath: '/responsive_design.png',
-    altText: 'Responsive Design Icon',
-    skillName: 'Responsive Design',
+    imagePath: "/responsive_design.png",
+    altText: "Responsive Design Icon",
+    skillName: "Responsive Design",
   },
   {
-    imagePath: '/info_architecture.png',
-    altText: 'Information Architecture Icon',
-    skillName: 'Information Architecture',
+    imagePath: "/info_architecture.png",
+    altText: "Information Architecture Icon",
+    skillName: "Information Architecture",
   },
   {
-    imagePath: '/web.png',
-    altText: 'Web Accessibility Icon',
-    skillName: 'Web Accessibility',
+    imagePath: "/web.png",
+    altText: "Web Accessibility Icon",
+    skillName: "Web Accessibility",
   },
 ];
 
@@ -61,9 +61,9 @@ const cardVariants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 0.8
-    }
-  }
+      duration: 0.8,
+    },
+  },
 };
 
 function SkillCard({ imagePath, altText, skillName }) {
@@ -84,28 +84,24 @@ function SkillCard({ imagePath, altText, skillName }) {
 
 export default function Skills() {
   return (
-    
-      <div className={styles.skills}>
-        {skillsData.map((skill, index) => (
-          <motion.div
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-            key={skill.skillName}
-          >
-            <motion.div
-              variants={cardVariants}
-            >
-              <SkillCard
-                key={index}
-                imagePath={skill.imagePath}
-                altText={skill.altText}
-                skillName={skill.skillName}
-              />
-            </motion.div>
+    <div className={styles.skills}>
+      {skillsData.map((skill, index) => (
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          key={skill.skillName}
+        >
+          <motion.div variants={cardVariants}>
+            <SkillCard
+              key={index}
+              imagePath={skill.imagePath}
+              altText={skill.altText}
+              skillName={skill.skillName}
+            />
           </motion.div>
-        ))}
-      </div>
-    
+        </motion.div>
+      ))}
+    </div>
   );
 }

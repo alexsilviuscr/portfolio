@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
-  --font-headers: 'Poppins', sans-serif;
-  --font-body: 'Lato', sans-serif;
-  --body-text-color: #F4F8F9; /* Ivory */
-  --accent-color-cer-blue: #2AA1CB; /* Cerulean Blue */
-  --accent-color-elec-blue: #00CCFF; /* Electric Blue */
-  --accent-color-grey: #A6A6A6; /* Silver Grey */
+  --font-headers: "Poppins", sans-serif;
+  --font-body: "Lato", sans-serif;
+  --body-text-color: #f4f8f9; /* Ivory */
+  --accent-color-cer-blue: #2aa1cb; /* Cerulean Blue */
+  --accent-color-elec-blue: #00ccff; /* Electric Blue */
+  --accent-color-grey: #a6a6a6; /* Silver Grey */
   --accent-color-purple: #54348d; /* Royal Purple*/
   --main-bg-color: #010110; /* Midnight Black */
-  --secondary-bg-color: #1F182C; /* Midnight Indigo */
+  --secondary-bg-color: #1f182c; /* Midnight Indigo */
 }
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 html {
@@ -31,7 +32,11 @@ html {
 }
 body {
   color: var(--body-text-color);
-  background: radial-gradient(64.86% 64.86% at 50% 50%, var(--secondary-bg-color) 0%, var(--main-bg-color) 100%);
+  background: radial-gradient(
+    64.86% 64.86% at 50% 50%,
+    var(--secondary-bg-color) 0%,
+    var(--main-bg-color) 100%
+  );
   background-position: center;
   margin: 0;
   min-width: 100vw;
@@ -136,8 +141,22 @@ p {
   }
 }
 .designer {
-  background: -webkit-linear-gradient(135deg,var(--accent-color-cer-blue),var(--accent-color-purple),var(--accent-color-elec-blue),var(--accent-color-grey),var(--accent-color-purple));
-  background: linear-gradient(-45deg,var(--accent-color-cer-blue),var(--accent-color-purple),var(--accent-color-elec-blue),var(--accent-color-grey),var(--accent-color-purple));
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--accent-color-cer-blue),
+    var(--accent-color-purple),
+    var(--accent-color-elec-blue),
+    var(--accent-color-grey),
+    var(--accent-color-purple)
+  );
+  background: linear-gradient(
+    -45deg,
+    var(--accent-color-cer-blue),
+    var(--accent-color-purple),
+    var(--accent-color-elec-blue),
+    var(--accent-color-grey),
+    var(--accent-color-purple)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -171,11 +190,11 @@ p {
 }
 .developer {
   // width: 11.2ch;
-  font-family: 'Cutive Mono', monospace;;
+  font-family: "Cutive Mono", monospace;
   font-size: 1.5rem;
 
   width: 21ch;
-  animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(21), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px var(--accent-color-cer-blue) solid;
@@ -216,34 +235,34 @@ p {
   stroke-dashoffset: 0%;
   animation: stroke-offset 5.5s infinite linear;
 
-  @keyframes stroke-offset{
+  @keyframes stroke-offset {
     100% {
       stroke-dashoffset: -35%;
     }
-  } 
+  }
 }
 
-.text-copy:nth-child(1){
+.text-copy:nth-child(1) {
   stroke: var(--accent-color-purple);
   animation-delay: -1;
 }
 
-.text-copy:nth-child(2){
+.text-copy:nth-child(2) {
   stroke: var(--accent-color-purple);
   animation-delay: -2s;
 }
 
-.text-copy:nth-child(3){
+.text-copy:nth-child(3) {
   stroke: var(--accent-color-elec-blue);
   animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
+.text-copy:nth-child(4) {
   stroke: var(--accent-color-elec-blue);
   animation-delay: -4s;
 }
 
-.text-copy:nth-child(5){
+.text-copy:nth-child(5) {
   stroke: var(--accent-color-cer-blue);
   animation-delay: -5s;
 }
@@ -252,7 +271,7 @@ p {
 
   h3 {
     line-height: 100%;
-    letter-spacing: -.03em;
+    letter-spacing: -0.03em;
     font-weight: 700;
     font-size: 2rem;
 
@@ -262,19 +281,16 @@ p {
   }
 }
 .url-div {
-
   a {
     color: var(--accent-color-cer-blue);
 
     padding: 1rem;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-
-  
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
   svg {
     color: var(--accent-color-cer-blue);
     scale: 2;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 
     &:hover {
       filter: drop-shadow(0px 0px 5px var(--accent-color-cer-blue));

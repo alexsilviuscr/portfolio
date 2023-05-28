@@ -3,60 +3,58 @@
     background: var(--secondary-bg-color);
     border-radius: 0.25rem;
     font: 1rem var(--font-body);
-    border: 0.1rem rgba(42, 160, 203, 0.3) solid; 
+    border: 0.1rem rgba(42, 160, 203, 0.3) solid;
 
     @media (min-width: 48rem) {
         padding: 3rem;
     }
-    
+
     input {
         width: 100%;
         font: 1rem var(--font-body);
-        border: 1px solid var(--accent-color-purple); 
+        border: 1px solid var(--accent-color-purple);
         border-radius: 0.1rem;
         // resize: none;
         background: 0 0;
         padding: 1rem;
-        }
-
-        input[type=text]:focus,
-        input[type=email]:focus,
-        input textarea:focus {
-            box-shadow: 0 0 1rem rgba(9, 117, 241, 0.8);
-            border-color: var(--accent-color-elec-blue);
-        }
-
-        input[type=text]:focus-visible,
-        input[type=email]:focus-visible,
-        input textarea:focus-visible {
-            outline: none;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-
-            &::placeholder {
-                color: var(--accent-color-grey);
-                opacity: 0.5;
-            }
-        }
-
-        textarea {
-            resize: vertical;
-            padding: 0.5rem;
-            min-height: 5rem;
-            max-height: 20rem;
-            background: 0;
-            border: 1px solid var(--accent-color-purple); 
-
-            &:focus {
-                outline: 0;
-                box-shadow: 0 0 1rem rgba(9, 117, 241, 0.8);
-                border-color: var(--accent-color-elec-blue);
-            }
     }
-    
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input textarea:focus {
+        box-shadow: 0 0 1rem rgba(9, 117, 241, 0.8);
+        border-color: var(--accent-color-elec-blue);
+    }
+
+    input[type="text"]:focus-visible,
+    input[type="email"]:focus-visible,
+    input textarea:focus-visible {
+        outline: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        &::placeholder {
+        color: var(--accent-color-grey);
+        opacity: 0.5;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        padding: 0.5rem;
+        min-height: 5rem;
+        max-height: 20rem;
+        background: 0;
+        border: 1px solid var(--accent-color-purple);
+
+        &:focus {
+        outline: 0;
+        box-shadow: 0 0 1rem rgba(9, 117, 241, 0.8);
+        border-color: var(--accent-color-elec-blue);
+        }
+    }
 }
 .contactInfo {
     padding: 4rem;
@@ -73,7 +71,7 @@
     grid-gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
 
-    @media (min-width: 64rem){
+    @media (min-width: 64rem) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -84,7 +82,7 @@
     color: var(--secondary-bg-color);
 }
 .subtitle {
-    font-weight: 400;
+    
 }
 .icon {
     width: 1.5rem;
@@ -93,28 +91,25 @@
 }
 
 .listItem {
-    
-
     &:not(:last-child) {
         border-bottom: 1px solid var(--secondary-bg-color);
         padding-block-end: 2rem;
     }
 
     span {
-
         &:first-child {
-            @apply flex items-center justify-center;
+        @apply flex items-center justify-center;
 
-            width: 3.5rem;
-            height: 3.5rem;
-            background-color: var(--secondary-bg-color);
-            border-radius: 50%;
-            text-align: center;
-            transition: scale 0.3s ease;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: var(--secondary-bg-color);
+        border-radius: 50%;
+        text-align: center;
+        transition: scale 0.3s ease;
 
-            &:hover {
-                scale: 1.1;
-            }
+        &:hover {
+            scale: 1.1;
         }
-    }
+        }
+  }
 }

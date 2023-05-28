@@ -184,7 +184,7 @@ export default function Home() {
                 </Button>
               </div>
               {/* about visual */}
-              <Image
+              {/* <Image
                 src="/Alex.png"
                 width={500}
                 height={750}
@@ -194,7 +194,7 @@ export default function Home() {
                 style={{ objectFit: "contain" }}
                 alt="Alex Silviu Picture"
                 priority={true}
-              />
+              /> */}
             </div>
             {/* end about intro */}
 
@@ -234,7 +234,7 @@ export default function Home() {
             {/* end experience and education */}
           </section>
         </motion.div>
-        
+
         {/* portfolio section */}
         <motion.div
           initial={{ opacity: 0 }}

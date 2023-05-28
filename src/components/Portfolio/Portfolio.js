@@ -1,6 +1,6 @@
 import styles from "./Portfolio.module.scss";
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Button from "../Button/Button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,43 +10,43 @@ const portfolio = [
     category: ["all", "frontend"],
     image: "/portfolio/baricare_app_case.jpg",
     info: "HTML, CSS, Tailwind, JavaScript, React, Next.js, MongoDB, Node.js, Heroku, Framer Motion",
-    slug: "baricare-app"
+    slug: "baricare-app",
   },
   {
     name: "Portfolio",
     category: ["all", "frontend"],
     image: "/portfolio/portfolio_case.jpg",
     info: "HTML, CSS, Tailwind, JavaScript, React, Next.js, Framer Motion",
-    slug: "portfolio"
+    slug: "portfolio",
   },
   {
     name: "BariCare Website",
     category: ["all", "frontend"],
     image: "/portfolio/baricare_web_case.jpg",
     info: "HTML, CSS, JavaScript",
-    slug: "baricare-web"
+    slug: "baricare-web",
   },
   {
     name: "Innovisor Website",
     category: ["all", "frontend", "ux-ui"],
     image: "/portfolio/innovisor_case.jpg",
     info: "HTML, CSS, JavaScript, Wordpress, Adobe XD/Figma",
-    slug: "innovisor"
+    slug: "innovisor",
   },
   {
     name: "Rice Mobile Shopping Experience",
     category: ["all", "ux-ui"],
     image: "/portfolio/rice_case.jpg",
-    info: "UX/UI, Usability Testing, User Research, Adobe XD/Figma, Proto.io",
-    slug: "rice-mobile-shopping"
+    info: "UX/UI, Usability Testing, User Research, Adobe XD/Figma",
+    slug: "rice-mobile-shopping",
   },
   {
     name: "The Usability of E-Learning Platforms at SDU",
     category: ["all", "ux-ui"],
     image: "/portfolio/sdu_case.jpg",
     info: "UX, Usability Testing, User Research",
-    slug: "sdu-usability-elearning"
-  }
+    slug: "sdu-usability-elearning",
+  },
 ];
 
 const cardVariants = {
@@ -60,9 +60,9 @@ const cardVariants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 0.8
-    }
-  }
+      duration: 0.8,
+    },
+  },
 };
 
 export default function Portfolio() {
@@ -74,7 +74,7 @@ export default function Portfolio() {
   }, []);
 
   useEffect(() => {
-    const filteredProjects = portfolio.filter(p =>
+    const filteredProjects = portfolio.filter((p) =>
       p.category.includes(filter)
     );
     setProjects(filteredProjects);
@@ -107,7 +107,7 @@ export default function Portfolio() {
         >
           Frontend
         </a>
-        
+
         <a
           href="/#"
           className={filter === "ux-ui" ? `${styles.active}` : ""}
@@ -121,18 +121,18 @@ export default function Portfolio() {
       </div>
       <div className={`${styles.portfolioContainer}`}>
         <AnimatePresence>
-          {projects.map(item => (
+          {projects.map((item) => (
             <motion.div
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
               key={item.name}
             >
-              <motion.div
-                variants={cardVariants}
-                key={item.name}
-              >
-                <div className={`${styles.portfolioItem} flex flex-col gap-8`} key={item.name}>
+              <motion.div variants={cardVariants} key={item.name}>
+                <div
+                  className={`${styles.portfolioItem} flex flex-col gap-8`}
+                  key={item.name}
+                >
                   <div className={`${styles.image}`}>
                     <Image
                       src={item.image}
@@ -140,9 +140,12 @@ export default function Portfolio() {
                       width={600}
                       height={337}
                       style={{ objectFit: "cover" }}
+                      quality={100}
                     />
                   </div>
-                  <div className={`${styles.portfolioDetails} flex flex-col justify-center gap-4 p-4`}>
+                  <div
+                    className={`${styles.portfolioDetails} flex flex-col justify-center gap-4 p-4`}
+                  >
                     <h3>{item.name}</h3>
                     <p>{item.info}</p>
                     <Button href={`/portfolio/${item.slug}`}>Read More</Button>

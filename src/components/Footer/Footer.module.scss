@@ -1,7 +1,6 @@
 .footer {
     background: var(--secondary-bg-color);
     font: 1rem var(--font-body);
-    color: red;
 }
 .copyright {
     color: var(--accent-color-grey);
@@ -18,7 +17,6 @@
     svg {
         font-size: 3rem;
         margin-top: -6rem;
-
         @media (max-width: 33.75rem) {
             margin: 0 auto;
             margin-top: -4rem;
@@ -26,7 +24,6 @@
     }
 }
 .footerLogoWrap {
-    // background: red;
 
     @media (max-width: 33.75rem) {
 
@@ -34,8 +31,7 @@
         flex-direction: column;
         align-items: center;
     }
-}
-  
+} 
 .textCopy {
     stroke-width: 0.1rem;
 }

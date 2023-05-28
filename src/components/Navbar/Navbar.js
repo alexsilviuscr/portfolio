@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.scss";
 import { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
   const handleScroll = (target) => {
     scroll.scrollTo(target, {
       duration: 300,
-      smooth: 'easeInOutQuart',
+      smooth: "easeInOutQuart",
       offset: 50,
     });
   };
@@ -30,14 +30,16 @@ export default function Navbar() {
   ];
 
   const navList = (
-    <ul className={`${styles.navList} mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6`}>
+    <ul
+      className={`${styles.navList} mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6`}
+    >
       {navItems.map((item) => (
         <li key={item.id}>
           <Link
             to={item.id}
             spy={true}
             smooth={true}
-            duration={300} 
+            duration={300}
             offset={50}
             activeClass={styles.active}
             onSetActive={handleSetActive}
@@ -52,7 +54,9 @@ export default function Navbar() {
   );
 
   return (
-    <nav className={`${styles.navbar} w-full max-w-6xl sticky top-0 z-10 h-max rounded-none py-2 px-4 lg:px-8 lg:py-6`}>
+    <nav
+      className={`${styles.navbar} w-full max-w-6xl sticky top-0 z-10 h-max rounded-none py-2 px-4 lg:px-8 lg:py-6`}
+    >
       <div className="flex items-center justify-end">
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
@@ -69,7 +73,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
               <svg
@@ -79,7 +87,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>

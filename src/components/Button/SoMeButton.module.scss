@@ -1,28 +1,25 @@
 .urlDiv {
+  a {
+    color: var(--accent-color-cer-blue);
+    padding: 1rem;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  svg {
+    color: var(--accent-color-cer-blue);
+    scale: 2;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 
-    a {
-      color: var(--accent-color-cer-blue);
-  
-      padding: 1rem;
-      transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-    
-    }
-    svg {
-      color: var(--accent-color-cer-blue);
-      scale: 2;
-      transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-  
-      &:hover {
-        filter: drop-shadow(0px 0px 5px var(--accent-color-cer-blue));
+    &:hover {
+      filter: drop-shadow(0px 0px 5px var(--accent-color-cer-blue));
+      color: var(--body-text-color);
+
+      svg {
         color: var(--body-text-color);
-  
-        svg {
-          color: var(--body-text-color);
-        }
       }
-  
-      &:active {
-        filter: drop-shadow(0px 0px 2px var(--accent-color-cer-blue));
-      }
+    }
+
+    &:active {
+      filter: drop-shadow(0px 0px 2px var(--accent-color-cer-blue));
     }
   }
+}
