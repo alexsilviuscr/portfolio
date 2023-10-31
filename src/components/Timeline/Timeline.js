@@ -8,7 +8,7 @@ import { MdWork, MdSchool } from "react-icons/md";
 
 const timelineExperienceData = [
   {
-    date: "2022 - Present",
+    date: "2022 - 2023",
     title: "UX/UI Designer",
     subtitle: "Aditerna, Romania",
   },
