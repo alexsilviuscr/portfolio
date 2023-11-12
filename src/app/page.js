@@ -58,7 +58,7 @@ export default function Home() {
               </svg>
             </div>
             {/* role */}
-            <span className="developer">&lt;front-end developer&gt;</span>
+            {/* <span className="developer">&lt;front-end developer&gt;</span> */}
           </div>
 
           <div className="flex hero-info lg:justify-start items-center flex-col-reverse lg:flex-row gap-16 xl:gap-32">
