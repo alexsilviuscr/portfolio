@@ -31,7 +31,7 @@ const timelineEducationData = [
     subtitle: "IT School, Romania",
   },
   {
-    date: "2018 - 2022",
+    date: "2020 - 2022",
     title: "MSc IT Web Communication Design",
     subtitle: "University of Southern Denmark, Denmark",
   },

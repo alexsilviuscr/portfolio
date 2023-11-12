@@ -9,7 +9,7 @@ const portfolio = [
     name: "BariCare App",
     category: ["all", "frontend"],
     image: "/portfolio/baricare_app_case.jpg",
-    info: "HTML, CSS, Tailwind, JavaScript, React, Next.js, MongoDB, Node.js, Heroku, Framer Motion",
+    info: "HTML, CSS, Tailwind, JavaScript, React, Next.js, MongoDB, Node.js, Railway, Framer Motion",
     slug: "baricare-app",
   },
   {
