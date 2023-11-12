@@ -115,20 +115,14 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col gap-2 inner-p">
                     <p>
-                      While I've had the pleasure of honing my design skills,
-                      I've recently completed a Front End Development course
-                      which allowed me to expand my knowledge of HTML, CSS,
-                      JavaScript, and React.
-                    </p>
-                    <p>
-                      As such, I am looking to further{" "}
-                      <span className="italic">develop</span> this side of my
-                      skillset.
+                      Having transitioned into the world of front-end development,
+                      I am excited about leveraging my skills in HTML, CSS, JavaScript,
+                      and React to craft exceptional digital experiences.
                     </p>
                   </div>
                   <div className="flex flex-col gap-2 inner-p">
                     <p>
-                      I've had the opportunity to grow both professionally and
+                      I've had the opportunity and pleasure to grow both professionally and
                       educationally in multicultural and international
                       environments.
                     </p>
