@@ -4,7 +4,7 @@
         "title": "BariCare App",
         "slug": "baricare-app",
         "github": "https://github.com/alexsilviuscr/BariCare-App",
-        "demo": "https://baricare-app.netlify.app/login",
+        "demo": "https://baricare-app.netlify.app/",
         "image": "/portfolio/baricare_app_case.jpg",
         "info": "HTML, CSS, Tailwind, JavaScript, React, Next.js, MongoDB, Node.js, Railway, Framer Motion",
         "introduction": [
