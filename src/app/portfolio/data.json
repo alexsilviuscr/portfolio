@@ -224,14 +224,15 @@
             "This required extensive research into the use and capabilities of biometric devices and military training."
         ],
         "insights": [
+            "Through extensive research and stakeholder and user interviews, the following insights came to surface:",
             "There was a need to analyse and display the trainee's stress and attention levels based on readings from the biometric devices.",
-            "The instructors needed the ability to to customize scenarios and improve trainee performance in real-time."
+            "The instructors needed the ability to customize scenarios and improve trainee performance in real-time."
         ],
         "solution": [
-            "Based on the research and stakeholder interviews, the solution had to incorporate the following features:",
+            "Based on the research and stakeholder interviews, the solution incorporated the following features:",
             "Biometric readings of the trainee's stress and attention levels.",
-            "Offer options for the instructor to tailor the training scenario's parameters via the use of widgets.",
-            "Prioritise critical readings so that immediate actions can be taken by the instructor."
+            "Options for the instructor to tailor the training scenario's parameters via the use of widgets.",
+            "Prioritise critical readings so that immediate actions may be taken by the instructor."
         ],
         "design-process": [
             "/portfolio/project-s/01.gif",
