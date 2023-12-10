@@ -4,7 +4,7 @@
     }
     &.experience {
         &::before {
-            height: 70%;
+            height: 68%;
         }
         @media screen and (max-width: 48rem) {
             &::before {
@@ -14,11 +14,11 @@
     }
     &.education {
         &::before {
-            height: 75%;
+            height: 68%;
         }
         @media screen and (max-width: 48rem) {
             &::before {
-                height: 72%;
+                height: 68%;
             }
         }
     }

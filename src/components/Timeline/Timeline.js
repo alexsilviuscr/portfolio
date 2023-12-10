@@ -9,7 +9,7 @@ import { MdWork, MdSchool } from "react-icons/md";
 const timelineExperienceData = [
   {
     date: "2022 - 2023",
-    title: "UX/UI Designer",
+    title: "UX Designer",
     subtitle: "Aditerna, Romania",
   },
   {
@@ -25,11 +25,11 @@ const timelineExperienceData = [
 ];
 
 const timelineEducationData = [
-  {
-    date: "2022 - 2023",
-    title: "Front-end Development",
-    subtitle: "IT School, Romania",
-  },
+  // {
+  //   date: "2022 - 2023",
+  //   title: "Front-end Development",
+  //   subtitle: "IT School, Romania",
+  // },
   {
     date: "2020 - 2022",
     title: "MSc IT Web Communication Design",

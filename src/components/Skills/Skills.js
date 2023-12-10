@@ -25,8 +25,8 @@ const skillsData = [
   },
   {
     imagePath: "/ui.png",
-    altText: "UX/UI Design Icon",
-    skillName: "UX/UI Design",
+    altText: "UX Design Icon",
+    skillName: "UX Design",
   },
   {
     imagePath: "/usability.png",

@@ -13,6 +13,13 @@ const portfolio = [
     slug: "baricare-app",
   },
   {
+    name: "Project S Dashboard",
+    category: ["all", "ux"],
+    image: "/portfolio/project_s_case.jpg",
+    info: "UX Design, Figma, After Effects",
+    slug: "project-s",
+  },
+  {
     name: "Portfolio",
     category: ["all", "frontend"],
     image: "/portfolio/portfolio_case.jpg",
@@ -28,21 +35,21 @@ const portfolio = [
   },
   {
     name: "Innovisor Website",
-    category: ["all", "frontend", "ux-ui"],
+    category: ["all", "frontend", "ux"],
     image: "/portfolio/innovisor_case.jpg",
-    info: "HTML, CSS, JavaScript, Wordpress, Adobe XD/Figma",
+    info: "HTML, CSS, JavaScript, Wordpress, Adobe XD",
     slug: "innovisor",
   },
   {
     name: "Rice Mobile Shopping Experience",
-    category: ["all", "ux-ui"],
+    category: ["all", "ux"],
     image: "/portfolio/rice_case.jpg",
-    info: "UX/UI, Usability Testing, User Research, Adobe XD/Figma",
+    info: "UX, Usability Testing, User Research, Figma",
     slug: "rice-mobile-shopping",
   },
   {
     name: "The Usability of E-Learning Platforms at SDU",
-    category: ["all", "ux-ui"],
+    category: ["all", "ux"],
     image: "/portfolio/sdu_case.jpg",
     info: "UX, Usability Testing, User Research",
     slug: "sdu-usability-elearning",
@@ -110,13 +117,13 @@ export default function Portfolio() {
 
         <a
           href="/#"
-          className={filter === "ux-ui" ? `${styles.active}` : ""}
+          className={filter === "ux" ? `${styles.active}` : ""}
           onClick={(e) => {
             e.preventDefault();
-            handleFilterClick("ux-ui");
+            handleFilterClick("ux");
           }}
         >
-          UX/UI
+          UX Design
         </a>
       </div>
       <div className={`${styles.portfolioContainer}`}>

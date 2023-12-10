@@ -1,6 +1,8 @@
 import styles from "./Footer.module.scss";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={`${styles.footer}`}>
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -70,7 +72,7 @@ export default function Footer() {
         <span
           className={`flex text-sm text-gray-500 sm:text-center justify-center dark:text-gray-400 ${styles.copyright}`}
         >
-          © 2023 Alex Silviu Portfolio. All Rights Reserved.
+          © {currentYear} Alex Silviu Portfolio. All Rights Reserved.
         </span>
       </div>
     </footer>

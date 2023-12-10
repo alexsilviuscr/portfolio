@@ -102,7 +102,7 @@
         "github": "",
         "demo": "",
         "image": "/portfolio/innovisor_case.jpg",
-        "info": "UX/UI Design, Adobe XD/Figma, HTML, CSS, JavaScript, Wordpress",
+        "info": "UX Design, Adobe XD/Figma, HTML, CSS, JavaScript, Wordpress",
         "introduction": [
             "Innovisor is a company that aims to transform organizations into collaborative, agile, and human workplaces by leveraging people data, algorithms, and predictive intelligence.",
             "Their website required a redesign to align with modern standards and provide a satisfying user experience across desktop and mobile devices."
@@ -139,7 +139,7 @@
         "github": "",
         "demo": "",
         "image": "/portfolio/rice_case.jpg",
-        "info": "UX/UI Design, User Research, Usability Testing, Mobile Design",
+        "info": "UX Design, User Research, Usability Testing, Mobile Design",
         "introduction": [
             "RICETERIA is part of the Danish homewares and accessories company, RICE, known for colorful melamine, handmade baskets, storage, and hand-glazed tableware.",
             "Their website required a mobile shopping experience that aligned with their visual brand identity and provided a satisfying user experience on mobile devices."
@@ -204,6 +204,39 @@
             "Clear information presentation: The content layout ought to be optimized to enhance readability and comprehension, reducing cognitive load for students. By employing appropriate typography, clear headings, and visual cues, the presentation of information needs to be made more user-friendly and conducive to effective learning."
         ],
         "design-process": []
+    },
+    {
+        "id": 7,
+        "title": "Project S - Dashboard",
+        "slug": "project-s",
+        "github": "",
+        "demo": "",
+        "image": "/portfolio/project_s_case.jpg",
+        "info": "UX Design, Figma, After Effects",
+        "introduction": [
+            "Project S was initiated with the objective of integrating biometric devices and neuroscience principles into designing an instructor dashboard to support and enhance VR training for pilots.",
+            "The stakeholders sought a high-tech and user-friendly interface that allows instructors to monitor trainee training sessions and make necessary adjustments in real-time."
+          ],
+        "features": "",
+        "technologies": "",
+        "problem": [
+            "The challenge in Project S was to design and develop a high-tech instructor dashboard for VR training that allows instructors to monitor trainee sessions and make real-time adjustments.",
+            "This required extensive research into the use and capabilities of biometric devices and military training."
+        ],
+        "insights": [
+            "There was a need to analyse and display the trainee's stress and attention levels based on readings from the biometric devices.",
+            "The instructors needed the ability to to customize scenarios and improve trainee performance in real-time."
+        ],
+        "solution": [
+            "Based on the research and stakeholder interviews, the solution had to incorporate the following features:",
+            "Biometric readings of the trainee's stress and attention levels.",
+            "Offer options for the instructor to tailor the training scenario's parameters via the use of widgets.",
+            "Prioritise critical readings so that immediate actions can be taken by the instructor."
+        ],
+        "design-process": [
+            "/portfolio/project-s/01.gif",
+            "/portfolio/project-s/02.gif"
+        ]
     }
   ]
   
