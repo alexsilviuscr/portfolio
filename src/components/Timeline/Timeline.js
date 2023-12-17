@@ -37,7 +37,7 @@ const timelineEducationData = [
   },
   {
     date: "2017 - 2018",
-    title: "BA Top-Up E-Concept Development",
+    title: "BA Digital Concept Development",
     subtitle: "Lillebaelt Academy, Denmark",
   },
   {
