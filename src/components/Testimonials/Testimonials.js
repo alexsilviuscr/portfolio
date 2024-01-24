@@ -84,7 +84,7 @@ export default function Testimonials() {
                 alt="Alex Silviu Designer & Developer Illustration"
               />
               <div className="flex flex-col gap-2 tracking-wider author">
-                <h5 className="font-bold">Wilhelmine Dohmen</h5>
+                <h5 className="font-bold">Wilhelmine D.</h5>
                 <p>Product Owner, Aditerna</p>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Testimonials() {
                 alt="Alex Silviu Designer & Developer Illustration"
               />
               <div className="flex flex-col gap-2 tracking-wider author">
-                <h5 className="font-bold">Eg Nicolajsen</h5>
+                <h5 className="font-bold">Eg N.</h5>
                 <p>Operational Consultant, Innovisor</p>
               </div>
             </div>
