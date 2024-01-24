@@ -102,79 +102,37 @@ export default function Home() {
                 </h1>
                 <div className="flex flex-col gap-8 about">
                   <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      I'm Alex Silviu Scripcariuc, a passionate UX-driven
-                      front-end developer with a focus on delivering inclusive
-                      and accessible user experiences.
-                    </p>
-                    <p>
-                      With a background in design and a rekindled passion for
-                      front-end development, I strive to create intuitive and
-                      user-centric digital solutions.
-                    </p>
+                    <h5>
+                      I'm Alex Silviu Scripcariuc, a UX-driven front-end developer
+                      passionate about creating inclusive digital experiences.
+                    </h5>
+                    <h5>
+                      With a background in UX Design, I specialize in HTML, CSS, JavaScript,
+                      and React to craft user-friendly solutions.
+                    </h5>
                   </div>
                   <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      Having transitioned into the world of front-end development,
-                      I am excited about leveraging my skills in HTML, CSS, JavaScript,
-                      and React to craft exceptional digital experiences.
-                    </p>
+                    <h5>
+                      My multicultural experiences have shaped my collaborative approach, and
+                      I am actively seeking opportunities to contribute my diverse skill set to dynamic teams.
+                    </h5>
                   </div>
                   <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      I've had the opportunity and pleasure to grow both professionally and
-                      educationally in multicultural and international
-                      environments.
-                    </p>
-                    <p>
-                      These experiences have allowed me to collaborate with
-                      amazing people and work on exciting projects.
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      I value collaboration and teamwork, as I truly believe
-                      that no one achieves greatness alone; I also like people,
-                      which helps.
-                    </p>
-                    <p>
-                      Feel free to read below what some of the people I've
-                      worked with have to say about our collaboration.
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      I am actively seeking new opportunities that enable me to
-                      combine my design skills with my newly rekindled passion
-                      and expertise in front-end development.
-                    </p>
-                    <p>
-                      I am eager to join, collaborate and contribute to a
-                      dynamic team where I can utilize my diverse skill set to
-                      create impactful and delightful user experiences.
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-2 inner-p">
-                    <p>
-                      If you have any exciting projects or positions that share
-                      our mutual interests, I would love to hear from you!
-                    </p>
-                    <p>
+                    <h5>
                       Let's{" "}
                       <a href="#contact" className="link">
                         connect
                       </a>{" "}
-                      and explore how we can collaborate to make a difference in
+                      and explore how we can collaborate and make a difference in
                       the digital landscape.
-                    </p>
+                    </h5>
                   </div>
-                  <p>
-                    PS: While I am currently based in Romania, I am more than
-                    open to relocating for the perfect opportunity!
-                  </p>
+                  <h5>
+                    PS: Open to relocation for the right opportunity!
+                  </h5>
                 </div>
                 <Button href="/cv_alexsilviu.pdf" target="blank">
-                  Download my resume
+                  Resume
                 </Button>
               </div>
               {/* about visual */}
